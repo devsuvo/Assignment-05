@@ -60,16 +60,6 @@
     "badge": "Top SQL"
   },
   {
-    "id": "mongodb",
-    "name": "MongoDB",
-    "category": "Database",
-    "description": "A flexible, document-oriented NoSQL database built for scalability and developer productivity.",
-    "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
-    "rating": 4.7,
-    "difficulty": "Beginner-Friendly",
-    "badge": "NoSQL"
-  },
-  {
     "id": "redis",
     "name": "Redis",
     "category": "Database",
@@ -126,17 +116,7 @@
     "description": "A platform designed to build, share, and run containerized applications reliably.",
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.9,
-    "difficulty": "Advanced",
+    "difficulty": "Intermediate",
     "badge": "Containers"
-  },
-  {
-    "id": "git",
-    "name": "Git",
-    "category": "Tools",
-    "description": "A distributed version control system for tracking changes and collaborating on code.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Must-Have"
   }
 ]
