@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# Dev Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Picking a tech stack for a new project always takes me longer than it should. I keep jumping between docs, comparing frameworks, and forgetting what I already decided on. So for this assignment I built **Dev Stack**, a small web app where you can browse popular technologies, check their details at a glance, and put together your own stack in one place.
 
-Currently, two official plugins are available:
+**Live site:** [add your live link here](#)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies I used
 
-## React Compiler
+- **React** for building the UI with components
+- **TypeScript** to keep the data and props type safe
+- **Tailwind CSS** and **DaisyUI** for styling and layout
+- **React-Toastify** for the little alert messages
+- **JSON** file for storing all the technology data
+- **Vite** as the build tool and dev server
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+1. **Browse technologies**
+   All technologies are loaded from a JSON file and shown as cards. Each card has the icon, a short description, category, difficulty level and rating, so it's easy to compare them side by side.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+2. **Build your own stack**
+   Click "Add to Stack" on any card and it shows up in the "Your Stack" panel right next to the grid. The button changes to "✓ Added to Stack" so you know what's already picked, and if you try to add the same one again you'll get a warning.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+3. **Remove anytime**
+   Changed your mind? Remove a single item with the ✕ button, or clear everything at once with "Remove All". The panel goes back to its empty state when nothing is selected.
+
+## Run it locally
+
+```bash
+git clone https://github.com/devsuvo/Assignment-05.git
+cd Assignment-05
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Then open `http://localhost:5173` in your browser.
+
+## What I learned
+
+This was my first time mixing TypeScript with React in a real project. Passing props between components and keeping the stack state in one place (App) took me a bit to figure out, but it made the add/remove logic much cleaner in the end.
+
+---
+
+Made by [devsuvo](https://github.com/devsuvo)
