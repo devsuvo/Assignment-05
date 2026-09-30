@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechCatalog from "./components/TechCatalog";
+import Footer from "./components/Footer";
 import type { Technology } from "./types/technology";
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           onRemoveAll={handleRemoveAll}
         />
       </main>
+      <Footer />
       <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
